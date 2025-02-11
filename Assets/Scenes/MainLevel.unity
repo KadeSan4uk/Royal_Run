@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.3533407, g: 0.031372543, b: 0.41960785, a: 1}
+  m_FogColor: {r: 0, g: 0.31483012, b: 0.38005382, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
   m_LinearFogStart: 0
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 7a407ee272670044e94eca4c1afedc74, type: 2}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.95
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -578,8 +578,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 'Score: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1005,8 +1005,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   cameraController: {fileID: 2045449954}
   chunkPrefab:
   - {fileID: 544059414708269596, guid: 955b17befd5c4af4b962c2c38002b4aa, type: 3}
-  - {fileID: 3233638827365326548, guid: 7376ed62dae25424db5e9c0c6807a75a, type: 3}
+  - {fileID: 3233638827365326548, guid: 4514f61b31456f04fa0f827ad67d11e4, type: 3}
   - {fileID: 3233638827365326548, guid: e44798a066c7ff545956c5c33cd1697d, type: 3}
   - {fileID: 3233638827365326548, guid: fb4d541a647b79f4dbe3441864b4ea43, type: 3}
   - {fileID: 544059414708269596, guid: 955b17befd5c4af4b962c2c38002b4aa, type: 3}

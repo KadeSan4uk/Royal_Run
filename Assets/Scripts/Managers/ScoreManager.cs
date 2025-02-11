@@ -13,6 +13,6 @@ public class ScoreManager : MonoBehaviour
         if (gameManager.GameOver) return;
 
         score += amount;
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 }
