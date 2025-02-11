@@ -837,7 +837,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.95
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -890,7 +890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3347479, y: 0.1199176, z: 0.080681965, w: 0.9311574}
+  m_LocalRotation: {x: -0.36212513, y: 0.44014797, z: -0.31020644, w: -0.76085943}
   m_LocalPosition: {x: 0.35, y: 4.41, z: 2.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 1
+  m_SoftShadowQuality: 3
 --- !u!1 &489603371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   playerController: {fileID: 28678056}
   timeText: {fileID: 307791697}
   gameOverText: {fileID: 207795954}
-  startTime: 60
+  startTime: 10
 --- !u!1 &1545581154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6558,7 +6558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedUpParticleSystem: {fileID: 1884653850}
-  minFOV: 40
+  minFOV: 50
   maxFOV: 100
   zoomDuration: 1
   zoomSpeedModifer: 5
