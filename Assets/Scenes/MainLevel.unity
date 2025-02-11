@@ -717,7 +717,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18223555, y: 0, z: 0, w: 0.9832549}
-  m_LocalPosition: {x: 0, y: 2.65, z: -4}
+  m_LocalPosition: {x: 0, y: 3.2, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1366,10 +1366,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 2045449954}
-  chunkPrefab: {fileID: 544059414708269596, guid: 955b17befd5c4af4b962c2c38002b4aa, type: 3}
+  chunkPrefab:
+  - {fileID: 544059414708269596, guid: 955b17befd5c4af4b962c2c38002b4aa, type: 3}
+  - {fileID: 3233638827365326548, guid: 7376ed62dae25424db5e9c0c6807a75a, type: 3}
+  - {fileID: 3233638827365326548, guid: e44798a066c7ff545956c5c33cd1697d, type: 3}
+  - {fileID: 3233638827365326548, guid: fb4d541a647b79f4dbe3441864b4ea43, type: 3}
+  - {fileID: 544059414708269596, guid: 955b17befd5c4af4b962c2c38002b4aa, type: 3}
+  - {fileID: 3233638827365326548, guid: fb4d541a647b79f4dbe3441864b4ea43, type: 3}
+  checkPointchunkPrefab: {fileID: 3233638827365326548, guid: 6a3b49d10b875d64e9cb3e365fdc0b17, type: 3}
   chunkParent: {fileID: 1545581155}
   scoreManager: {fileID: 1379162286}
   startChunkAmount: 12
+  checkPointChunkInterval: 8
   chunkLength: 10
   moveSpeed: 10
   minMoveSpeed: 5
@@ -1438,7 +1446,7 @@ MonoBehaviour:
   playerController: {fileID: 28678056}
   timeText: {fileID: 307791697}
   gameOverText: {fileID: 207795954}
-  startTime: 5
+  startTime: 60
 --- !u!1 &1545581154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,7 +6495,7 @@ Transform:
   m_GameObject: {fileID: 2045449951}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18223555, y: 0, z: 0, w: 0.9832549}
-  m_LocalPosition: {x: 0, y: 2.65, z: -4}
+  m_LocalPosition: {x: 0, y: 3.2, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
