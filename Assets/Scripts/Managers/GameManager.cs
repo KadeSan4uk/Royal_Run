@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameOverText;
     [SerializeField] float startTime = 5f;
 
+    public float TimeLeft => timeLeft;
     float timeLeft;
     bool gameOver = false;
 
