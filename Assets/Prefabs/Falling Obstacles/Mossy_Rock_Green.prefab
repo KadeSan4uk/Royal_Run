@@ -116,6 +116,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: 73c95a5d6cda65e4bbc29672f08fb097, type: 2}
     - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -155,11 +167,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Name
       value: Mossy_Rock_Green
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8355398337262819647, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355398337262819647, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_Mass
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355398337262819647, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1442261509651248854, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5019689737941711184, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
     m_AddedGameObjects:
@@ -170,6 +199,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2955430566382651469}
+    - targetCorrespondingSourceObject: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282268857369339237}
+    - targetCorrespondingSourceObject: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2889842476163926381}
   m_SourcePrefab: {fileID: 100100000, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
 --- !u!4 &825286371207512366 stripped
 Transform:
@@ -204,3 +239,69 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: -0.48, y: 0, z: 0}
+--- !u!114 &1282268857369339237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464294132854677298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0.2, y: -0.5, z: 0.2}
+--- !u!114 &-2889842476163926381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464294132854677298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87df995e8e1009478aaa2de49778835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeModifer: 5

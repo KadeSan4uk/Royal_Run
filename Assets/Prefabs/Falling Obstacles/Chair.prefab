@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 1442261509651248854, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: 4706569303032ae42a3120c6c10a5649, type: 2}
+      objectReference: {fileID: 13400000, guid: 685a2fe9b8f730449b2ee8b467ccbd70, type: 2}
     - target: {fileID: 6811373626899804090, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Name
-      value: ChairVariant
+      value: Chair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
