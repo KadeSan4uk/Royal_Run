@@ -6,18 +6,30 @@ public class Rock : MonoBehaviour
     [SerializeField] ParticleSystem collisionParticleSystem;
     [SerializeField] AudioSource boulderSmashAudioSource;
     [SerializeField] float shakeModifer = 10f;
+    [SerializeField] float collisionCooldown = 1f;
 
     CinemachineImpulseSource cinemachineImpulseSource;
+
+    float collisionTimer = 0f;
 
     void Awake()
     {
         cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
+    private void Update()
+    {
+        collisionTimer += Time.deltaTime;
+    }
+
     void OnCollisionEnter(Collision other)
     {
+        if (collisionTimer < collisionCooldown) return;
+
         FireImpulse();
         CollisionFX(other);
+
+        collisionTimer = 0;
     }
 
     void FireImpulse()
