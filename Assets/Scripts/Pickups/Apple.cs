@@ -11,11 +11,13 @@ public class Apple : Pickup
     LevelGenerator levelGenerator;
     GameManager gameManager;
     PlayerController playerController;
+    AudioManager audioManager;
 
     private void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
         playerController = FindFirstObjectByType<PlayerController>();
+        audioManager = FindFirstObjectByType<AudioManager>();
     }
 
     public void Init(LevelGenerator levelGenerator)
@@ -25,6 +27,8 @@ public class Apple : Pickup
 
     protected override void OnPickup()
     {
+        audioManager.PlayAppleAudioEffect(1f);
+
         levelGenerator.ChangeChunkMoveSpeed(adjustChengeMoveSpeedAmount);
         if (gameManager.TimeLeft <= TimeIsToLow)
         {

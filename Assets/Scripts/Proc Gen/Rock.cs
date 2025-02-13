@@ -9,12 +9,18 @@ public class Rock : MonoBehaviour
     [SerializeField] float collisionCooldown = 1f;
 
     CinemachineImpulseSource cinemachineImpulseSource;
+    AudioManager audioManager;
 
     float collisionTimer = 1f;
 
     void Awake()
     {
         cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
+    }
+
+    private void Start()
+    {
+        audioManager = FindFirstObjectByType<AudioManager>();
     }
 
     private void Update()
@@ -45,6 +51,6 @@ public class Rock : MonoBehaviour
         ContactPoint contactPoint = other.contacts[0];
         collisionParticleSystem.transform.position = contactPoint.point;
         collisionParticleSystem.Play();
-        boulderSmashAudioSource.Play();
+        audioManager.PlayRockJumpEffect(1f);
     }
 }
