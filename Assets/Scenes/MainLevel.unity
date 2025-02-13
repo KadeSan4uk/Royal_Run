@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07013f08493b38a429e5f82265405ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 8
   xClamp: 4.3
   zMaxClamp: 4
   zMinClamp: 1
@@ -553,8 +553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5942,8 +5942,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6467,7 +6467,7 @@ MonoBehaviour:
   minMoveSpeed: 5
   maxMoveSpeed: 30
   minGravityZ: -22
-  maxGravityZ: -5
+  maxGravityZ: -8
 --- !u!1 &1379162283
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,7 +6530,7 @@ MonoBehaviour:
   playerController: {fileID: 28678056}
   timeText: {fileID: 307791697}
   gameOverText: {fileID: 207795954}
-  startTime: 10
+  startTime: 20
 --- !u!1 &1545581154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6669,7 +6669,8 @@ MonoBehaviour:
   - {fileID: 1686425756270335454, guid: 3367af2dcb802a647a521a349f26435c, type: 3}
   - {fileID: 2464294132854677298, guid: 35fd29f366b59734487932b69ce6d3f8, type: 3}
   - {fileID: 4692972658141138516, guid: 9dfdb4094d22f414b8e150d643776f75, type: 3}
-  obstacleSpawnTime: 2
+  obstacleSpawnTime: 3
+  minObstacleSpawnTime: 0.5
   obstacleParent: {fileID: 1545581155}
   spawnWidth: 4
 --- !u!4 &1776396874
