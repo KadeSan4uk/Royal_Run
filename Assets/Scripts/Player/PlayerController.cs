@@ -4,7 +4,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 6f;
+    [SerializeField] float minMoveSpeed = 4f;
+    [SerializeField] float maxMoveSpeed = 10f;
     [SerializeField] float xClamp = 3f;
     [SerializeField] float zMaxClamp = 3f;
     [SerializeField] float zMinClamp = 3f;
@@ -20,6 +22,30 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         HandleMovement();
+    }
+
+    public void IncreaseMoveSpeed(float amount)
+    {
+        if (moveSpeed >= maxMoveSpeed)
+        {
+            moveSpeed = maxMoveSpeed;
+        }
+        else
+        {
+            moveSpeed += amount;
+        }
+    }
+
+    public void DecreaseMoveSpeed(float amount)
+    {
+        if (moveSpeed <= minMoveSpeed)
+        {
+            moveSpeed = minMoveSpeed;
+        }
+        else
+        {
+            moveSpeed -= amount;
+        }
     }
 
     private void HandleMovement()

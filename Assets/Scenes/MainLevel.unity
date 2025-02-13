@@ -169,7 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07013f08493b38a429e5f82265405ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 5
+  minMoveSpeed: 4
+  maxMoveSpeed: 10
   xClamp: 4.3
   zMaxClamp: 4
   zMinClamp: 1
@@ -261,6 +263,7 @@ MonoBehaviour:
   animator: {fileID: 1717636887}
   collisionCooldown: 1
   adjustChengeMoveSpeedAmount: -2
+  decreaseMoveSpeedAmount: 1
 --- !u!136 &28678060
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -948,8 +951,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 19e5d340e72198b46b25a1bdd08d2a47, type: 3}
-  m_Resource: {fileID: 8300000, guid: 19e5d340e72198b46b25a1bdd08d2a47, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 130ff80a30c78c445b0dd2afc91e4c6d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 130ff80a30c78c445b0dd2afc91e4c6d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1

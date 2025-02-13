@@ -4,15 +4,18 @@ public class Apple : Pickup
 {
     [SerializeField] float adjustChengeMoveSpeedAmount = 3f;
     [SerializeField] float increaseTimeIfOnLow = 2f;
+    [SerializeField] float increaseMoveSpeedAmount = 1f;
 
     float TimeIsToLow = 5f;
 
     LevelGenerator levelGenerator;
     GameManager gameManager;
+    PlayerController playerController;
 
     private void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
+        playerController = FindFirstObjectByType<PlayerController>();
     }
 
     public void Init(LevelGenerator levelGenerator)
@@ -27,6 +30,8 @@ public class Apple : Pickup
         {
             gameManager.IncreaseTime(increaseTimeIfOnLow);
         }
+
+        playerController.IncreaseMoveSpeed(increaseMoveSpeedAmount);
 
     }
 }
