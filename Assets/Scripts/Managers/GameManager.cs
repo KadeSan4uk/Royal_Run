@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         if (gameOver) return;
 
         timeLeft -= Time.deltaTime;
-        timeText.text = "Time Left: " + timeLeft.ToString("F1");
+        timeText.text = "Time: " + timeLeft.ToString("F1");
 
         if (timeLeft <= 0)
         {
