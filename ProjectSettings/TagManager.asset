@@ -13,6 +13,8 @@ TagManager:
   - Chair
   - Cart
   - Barrel
+  - Start
+  - Exit
   layers:
   - Default
   - TransparentFX

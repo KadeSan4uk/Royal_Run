@@ -1,8 +1,9 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
-{
+{   
     [SerializeField] PlayerController playerController;
     [SerializeField] TMP_Text timeText;
     [SerializeField] GameObject gameOverText;
@@ -21,11 +22,18 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         timeLeft = startTime;
+        Time.timeScale = 1f;
+
     }
 
     private void Update()
     {
         DecriaseTime();
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void IncreaseTime(float amount)
