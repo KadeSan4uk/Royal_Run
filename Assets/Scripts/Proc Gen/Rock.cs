@@ -4,7 +4,6 @@ using UnityEngine;
 public class Rock : MonoBehaviour
 {
     [SerializeField] ParticleSystem collisionParticleSystem;
-    [SerializeField] AudioSource boulderSmashAudioSource;
     [SerializeField] float shakeModifer = 10f;
     [SerializeField] float collisionCooldown = 1f;
 

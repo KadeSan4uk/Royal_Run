@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07013f08493b38a429e5f82265405ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 7
   minMoveSpeed: 5
-  maxMoveSpeed: 10
+  maxMoveSpeed: 12
   xClamp: 4.3
   zMaxClamp: 4
   zMinClamp: 1
@@ -1184,6 +1184,8 @@ MonoBehaviour:
   appleEat: {fileID: 8300000, guid: 2236ad8bebc429f40a30633cf330f4ea, type: 3}
   rockJump: {fileID: 8300000, guid: b025affaac4800d46a478597f6621056, type: 3}
   coinUp: {fileID: 8300000, guid: 466493494702ddd4ba898d40b20f7983, type: 3}
+  screamHero: {fileID: 8300000, guid: 0de258bffc561a445895dd606fcc12d1, type: 3}
+  woodDroped: {fileID: 8300000, guid: 15dc11eaa5be1654faf0a4031af300c0, type: 3}
 --- !u!4 &454806242
 Transform:
   m_ObjectHideFlags: 0
@@ -6615,8 +6617,8 @@ MonoBehaviour:
   moveSpeed: 10
   minMoveSpeed: 5
   maxMoveSpeed: 30
-  minGravityZ: -22
-  maxGravityZ: -8
+  minGravityZ: -25
+  maxGravityZ: -9
 --- !u!1 &1379162283
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,11 +14,13 @@ public class PlayerCollisionHanrdler : MonoBehaviour
 
     LevelGenerator levelGenerator;
     PlayerController playerController;
+    AudioManager audioManager;
 
     private void Start()
     {
         levelGenerator = FindFirstObjectByType<LevelGenerator>();
         playerController = FindFirstObjectByType<PlayerController>();
+        audioManager = FindFirstObjectByType<AudioManager>();
     }
 
     private void Update()
@@ -34,6 +36,7 @@ public class PlayerCollisionHanrdler : MonoBehaviour
 
         levelGenerator.ChangeChunkMoveSpeed(adjustChengeMoveSpeedAmount);
         animator.SetTrigger(hitString);
+        audioManager.PlayScreamHeroEffect(1f);
         playerController.DecreaseMoveSpeed(decreaseMoveSpeedAmount);
         cooldownTimer = 0f;
     }

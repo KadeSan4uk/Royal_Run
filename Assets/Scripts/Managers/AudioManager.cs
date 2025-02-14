@@ -7,6 +7,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip appleEat;
     [SerializeField] AudioClip rockJump;
     [SerializeField] AudioClip coinUp;
+    [SerializeField] AudioClip screamHero;
+    [SerializeField] AudioClip woodDroped;
+
 
     public void PlayAppleAudioEffect(float volume)
     {
@@ -20,6 +23,16 @@ public class AudioManager : MonoBehaviour
     public void PlayCoinUpEffect(float volume)
     {
         PlaySound(coinUp, volume);
+    }
+
+    public void PlayScreamHeroEffect(float volume)
+    {
+        PlaySound(screamHero, volume);
+    }
+
+    public void PlayWoodDropedEffect(float volume)
+    {
+        PlaySound(woodDroped, volume);
     }
 
     private void PlaySound(AudioClip clip, float volume)
