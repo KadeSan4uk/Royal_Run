@@ -6820,8 +6820,8 @@ MonoBehaviour:
   - {fileID: 1686425756270335454, guid: 3367af2dcb802a647a521a349f26435c, type: 3}
   - {fileID: 2464294132854677298, guid: 35fd29f366b59734487932b69ce6d3f8, type: 3}
   - {fileID: 4692972658141138516, guid: 9dfdb4094d22f414b8e150d643776f75, type: 3}
-  obstacleSpawnTime: 3
-  minObstacleSpawnTime: 0.5
+  obstacleSpawnTime: 3.5
+  minObstacleSpawnTime: 1
   obstacleParent: {fileID: 1545581155}
   spawnWidth: 4
 --- !u!4 &1776396874

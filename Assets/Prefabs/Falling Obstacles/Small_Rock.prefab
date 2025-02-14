@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_TagString
+      value: SmallRock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5019689737941711184, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}

@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cart
       objectReference: {fileID: 0}
+    - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
+      propertyPath: m_TagString
+      value: Cart
+      objectReference: {fileID: 0}
     - target: {fileID: 8355398337262819647, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Drag
       value: 0.2

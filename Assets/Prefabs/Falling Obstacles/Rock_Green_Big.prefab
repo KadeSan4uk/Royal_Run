@@ -5064,11 +5064,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Name
-      value: Mossy_Rock_Green
+      value: Rock_Green_Big
       objectReference: {fileID: 0}
     - target: {fileID: 7541694602443557591, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_TagString
-      value: Rock
+      value: BigRock
       objectReference: {fileID: 0}
     - target: {fileID: 8355398337262819647, guid: 4e363c3b29a378942a2f20a95e011c2a, type: 3}
       propertyPath: m_Drag
@@ -5203,6 +5203,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParticleSystem: {fileID: 3444999624179158973}
-  boulderSmashAudioSource: {fileID: 0}
   shakeModifer: 3
   collisionCooldown: 1

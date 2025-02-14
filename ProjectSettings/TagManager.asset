@@ -6,7 +6,13 @@ TagManager:
   tags:
   - Destroyer
   - Apple
-  - Rock
+  - Fence
+  - SmallRock
+  - BigRock
+  - Chest
+  - Chair
+  - Cart
+  - Barrel
   layers:
   - Default
   - TransparentFX
